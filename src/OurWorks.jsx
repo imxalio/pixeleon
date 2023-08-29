@@ -15,11 +15,9 @@ import tenth from './assets/works/10.jpg';
 import eleventh from './assets/works/11.jpg';
 import twelfth from './assets/works/12.jpg';
 
-const imageNames = [
-  first,
-  second,
-  third,
-  fourth,
+const sneakPeak = [first, second, third, fourth];
+
+const fullImage = [
   fifth,
   sixth,
   seventh,
@@ -33,6 +31,7 @@ const imageNames = [
 const OurWorks = () => {
   const [data, setData] = useState();
   const [select, setSelect] = useState('designs');
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-violet-50">
@@ -56,12 +55,31 @@ const OurWorks = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-3 gap-y-10 items-center justify-center">
-          {imageNames.map((item) => {
+        <div className="grid md:grid-cols-4 gap-5 gap-y-10 items-center justify-center mb-5">
+          {sneakPeak.map((item) => {
             return (
-              <img className="md:h-[250px] rounded-xl" key={item} src={item} />
+              <img className="md:h-[370px] rounded-xl" key={item} src={item} />
             );
           })}
+
+          {open &&
+            fullImage.map((item) => {
+              return (
+                <img
+                  className="md:h-[370px] rounded-xl"
+                  key={item}
+                  src={item}
+                />
+              );
+            })}
+        </div>
+        <div className="text-center">
+          <Button
+            onClick={() => setOpen(!open)}
+            customCss={'hover:bg-violet-400 transition-all duration-300'}
+          >
+            Show more
+          </Button>
         </div>
       </div>
     </div>
