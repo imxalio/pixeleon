@@ -4,6 +4,7 @@ import VideoEditing from './assets/icons/videoEditing.png';
 import WebDev from './assets/icons/webDev.png';
 import blob from './assets/blob.svg';
 import shurig from './assets/shurig.svg';
+import SectionTitle from './Component/SectionTitle';
 
 const ourServices = [
   {
@@ -37,18 +38,15 @@ const OurServices = () => {
     <div className="max-w-screen-xl mx-auto md:py-20 py-16 px-7 relative ">
       <div className="w-[300%] h-[120%] absolute bg-violet-50 -rotate-[12deg] right-[-50%] bottom-[-50%]  z-[-10] "></div>
       <img
-        className="absolute w-[300px] z-[-10] top-[15%] md:right-[-20%] opacity-25 "
+        className="absolute w-[300px] z-[-10] top-[15%] md:right-[-15%] opacity-25 "
         src={blob}
       ></img>
       <img
-        className="absolute w-[300px] z-[-10] bottom-[0%] md:left-[-20%] opacity-25"
+        className="absolute w-[300px] z-[-10] bottom-[0%] md:left-[-15%] opacity-25"
         src={shurig}
       ></img>
 
-      <h2 className="text-xl font-semibold mb-7 text-center border-b-4 border-violet-500 inline-block">
-        Our Services
-      </h2>
-      <h1 className="text-6xl font-bold mb-10 text-violet-950">What we do?</h1>
+      <SectionTitle miniTitle={'Our Services'} Title={'What we do?'} />
       <div className="grid md:grid-cols-4 gap-7 z-10">
         {ourServices.map((item, index) => {
           return (
