@@ -56,10 +56,10 @@ const OurWorks = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-5 gap-y-10 items-center justify-center">
+        <div className="grid md:grid-cols-5 gap-3 gap-y-10 items-center justify-center">
           {imageNames.map((item) => {
             return (
-              <img className="md:h-[370px] rounded-xl" key={item} src={item} />
+              <img className="md:h-[250px] rounded-xl" key={item} src={item} />
             );
           })}
         </div>
