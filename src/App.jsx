@@ -2,6 +2,7 @@ import AboutUs from './AboutUs';
 import './App.css';
 import Header from './Header';
 import OurServices from './OurServices';
+import OurWorks from './OurWorks';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <OurServices />
       <AboutUs />
+      <OurWorks />
     </div>
   );
 };

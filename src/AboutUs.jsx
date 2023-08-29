@@ -14,7 +14,7 @@ const AboutUs = () => {
           <div className="h-[350px] w-[350px] bg-violet-300 rounded-[50%] absolute z-10 right-0 top-0 opacity-10"></div>
         </div>
         <div>
-          <SectionTitle miniTitle={'About Us'} Title={'Pixeleon'} />
+          <SectionTitle miniTitle={'About Us'} Title={'About Pixeleon'} />
           <p className="text-xl">{description}</p>
         </div>
       </div>

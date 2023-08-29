@@ -38,21 +38,21 @@ const OurServices = () => {
     <div className="max-w-screen-xl mx-auto md:py-20 py-16 px-7 relative ">
       <div className="w-[300%] h-[120%] absolute bg-violet-50 -rotate-[12deg] right-[-50%] bottom-[-50%]  z-[-10] "></div>
       <img
-        className="absolute w-[300px] z-[-10] top-[15%] md:right-[-15%] opacity-25 "
+        className="absolute w-[300px] hidden md:block z-[-10] top-[15%] md:right-[-15%] opacity-25 "
         src={blob}
       ></img>
       <img
-        className="absolute w-[300px] z-[-10] bottom-[0%] md:left-[-15%] opacity-25"
+        className="absolute w-[300px] hidden md:block z-[-10] bottom-[0%] md:left-[-15%] opacity-25"
         src={shurig}
       ></img>
 
       <SectionTitle miniTitle={'Our Services'} Title={'What we do?'} />
-      <div className="grid md:grid-cols-4 gap-7 z-10">
+      <div className="grid md:grid-cols-2 xl:grid-cols-4  gap-7 z-10">
         {ourServices.map((item, index) => {
           return (
             <div
               key={index}
-              className="shadow-xl p-8 rounded-3xl md:h-[376px] flex flex-col justify-between bg-white z-10"
+              className="shadow-xl p-8 rounded-3xl md:h-[300px] xl:h-[375px] flex flex-col justify-between bg-white z-10"
             >
               <div>
                 <img className="w-12 mb-5 " src={item.icon}></img>
