@@ -9,7 +9,7 @@ const Hero = () => {
         best.
       </h2>
       <a
-        href="#"
+        href="#contact"
         className="text-white bg-rose-500 py-3 px-10 text-3xl font-bold inline-block rounded-xl shadow-2xl transition-all duration-500 hover:bg-violet-500 "
       >
         Hire Us

@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 body {
   color: #222;
   font-family: 'Signika', sans-serif;

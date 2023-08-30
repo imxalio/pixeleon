@@ -41,15 +41,14 @@ const Form = () => {
           placeholder="Additional Information (optional)"
           required
         />
+        <div className="flex justify-center">
+          <Button customCss={'text-2xl block md:w-3/6 w-full'} type={'submit'}>
+            Submit
+          </Button>
+        </div>
         <p className="text-base">
           You may also send us an email at contact@pixeleon.org.
         </p>
-      </div>
-
-      <div className="flex justify-center">
-        <Button customCss={'text-2xl block w-3/6'} type={'submit'}>
-          Submit
-        </Button>
       </div>
     </form>
   );

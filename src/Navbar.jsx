@@ -22,14 +22,23 @@ const Navbar = () => {
         <a className="transition-all duration-300 hover:text-rose-500" href="#">
           Home
         </a>
-        <a className="transition-all duration-300 hover:text-rose-500" href="#">
-          About Us
+        <a
+          className="transition-all duration-300 hover:text-rose-500"
+          href="#services"
+        >
+          Our Services
         </a>
-        <a className="transition-all duration-300 hover:text-rose-500" href="#">
-          Services
+        <a
+          className="transition-all duration-300 hover:text-rose-500"
+          href="#work"
+        >
+          Our work
         </a>
-        <a className="transition-all duration-300 hover:text-rose-500" href="#">
-          Portfolio
+        <a
+          className="transition-all duration-300 hover:text-rose-500"
+          href="#contact"
+        >
+          Contact us
         </a>
       </ul>
     </div>

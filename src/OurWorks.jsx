@@ -14,6 +14,7 @@ import ninth from './assets/works/9.jpeg';
 import tenth from './assets/works/10.jpeg';
 import eleventh from './assets/works/11.jpeg';
 import twelfth from './assets/works/12.png';
+import Toogle from './Component/Toogle';
 
 const sneakPeak = [first, second, third, fourth];
 const sneakPeakTree = [first, second, third];
@@ -30,64 +31,51 @@ const fullImage = [
 ];
 
 const OurWorks = () => {
-  const [data, setData] = useState();
-  const [select, setSelect] = useState('designs');
   const [open, setOpen] = useState(false);
+  const [select, setSelect] = useState(1);
 
   return (
-    <div className="bg-violet-50">
+    <div id="work" className="bg-violet-50">
       <div className="max-w-screen-xl mx-auto md:py-20 py-16 px-7">
         <SectionTitle Title={'Our Works'} />
 
-        <div className="text-center mb-9">
-          <div className="inline-block h-full text-center border-4 border-violet-500 p-1 rounded-xl shadow-xl">
-            <Button
-              customCss={`mr-3 ${select === 'designs' && 'bg-violet-500'}`}
-              onClick={() => setSelect('designs')}
-            >
-              Designs
-            </Button>
-            <Button
-              customCss={`${select === 'videos' && 'bg-violet-500'}`}
-              onClick={() => setSelect('videos')}
-            >
-              Videos
-            </Button>
-          </div>
-        </div>
+        <Toogle select={select} setSelect={setSelect} />
 
-        <div className="grid xl:grid-cols-4 lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 gap-5 gap-y-10 items-center justify-center mb-5">
-          {sneakPeak.map((item) => {
-            return (
-              <img
-                className="md:h-[370px] rounded-xl shadow-lg w-full h-full md:hidden lg:block"
-                key={item}
-                src={item}
-              />
-            );
-          })}
-
-          {sneakPeakTree.map((item) => {
-            return (
-              <img
-                className="md:h-[370px] rounded-xl shadow-lg w-full h-full md:block hidden lg:hidden"
-                key={item}
-                src={item}
-              />
-            );
-          })}
-
-          {open &&
-            fullImage.map((item) => {
+        {select === 1 && (
+          <div className="grid xl:grid-cols-4 lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 gap-5 gap-y-10 items-center justify-center mb-10">
+            {sneakPeak.map((item) => {
               return (
                 <img
-                  className="md:h-[370px] rounded-xl w-full h-full"
+                  className="md:h-[370px] rounded-xl shadow-lg w-full h-full md:hidden lg:block"
                   key={item}
                   src={item}
                 />
               );
             })}
-        </div>
+
+            {sneakPeakTree.map((item) => {
+              return (
+                <img
+                  className="md:h-[370px] rounded-xl shadow-lg w-full h-full md:block hidden lg:hidden"
+                  key={item}
+                  src={item}
+                />
+              );
+            })}
+
+            {open &&
+              fullImage.map((item) => {
+                return (
+                  <img
+                    className="md:h-[370px] rounded-xl w-full h-full"
+                    key={item}
+                    src={item}
+                  />
+                );
+              })}
+          </div>
+        )}
+
         <div className="text-center">
           <Button
             onClick={() => setOpen(!open)}

@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="flex text-white gap-10 justify-center items-center">
             <img className="w-[80px]" src={logo} />
             <div>
-              <h1 className="text-3xl font-bold mb-3">Pixeleon Agency</h1>
-              <p className="text-xl md:w-5/6">
+              <h1 className="text-2xl font-bold mb-3">Pixeleon Agency</h1>
+              <p className="text-lg md:w-5/6">
                 With passion and excellence, we offer diverse services that
                 elevate your brand.
               </p>
@@ -20,26 +20,26 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-5">
             <a
               href="#"
-              className="text-violet-800 text-4xl bg-white p-1 rounded-lg"
+              className="text-violet-800 text-2xl bg-white p-1 rounded-lg hover:text-violet-500"
             >
               <BsFacebook />
             </a>
 
             <a
               href="#"
-              className="text-violet-800 text-4xl bg-white p-1 rounded-lg"
+              className="text-violet-800 text-2xl bg-white p-1 rounded-lg hover:text-violet-500"
             >
               <BsTwitter />
             </a>
             <a
-              href="#"
-              className="text-violet-800 text-4xl bg-white p-1 rounded-lg"
+              href="https://www.instagram.com/pixeleonagency/"
+              className="text-violet-800 text-2xl bg-white p-1 rounded-lg  hover:text-violet-500"
             >
               <BsInstagram />
             </a>
             <a
-              href="#"
-              className="text-violet-800 text-4xl bg-white p-1 rounded-lg"
+              href="https://www.linkedin.com/company/pixeleon-agency/"
+              className="text-violet-800 text-2xl bg-white p-1 rounded-lg  hover:text-violet-500"
             >
               <BsLinkedin />
             </a>
