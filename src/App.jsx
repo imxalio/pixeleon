@@ -1,8 +1,11 @@
 import AboutUs from './AboutUs';
 import './App.css';
+import Footer from './Footer';
 import Header from './Header';
 import OurServices from './OurServices';
+import OurTeam from './OurTeam';
 import OurWorks from './OurWorks';
+import WorkWithUs from './WorkWithUs';
 
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
       <OurServices />
       <AboutUs />
       <OurWorks />
+      <OurTeam />
+      <WorkWithUs />
+      <Footer />
     </div>
   );
 };

@@ -52,7 +52,7 @@ const OurServices = () => {
           return (
             <div
               key={index}
-              className="shadow-xl p-8 rounded-3xl md:h-[300px] xl:h-[375px] flex flex-col justify-between bg-white z-10"
+              className="shadow-xl p-8 rounded-3xl md:h-[300px] lg:h-[240px] xl:h-[375px] flex flex-col justify-between bg-white z-10"
             >
               <div>
                 <img className="w-12 mb-5 " src={item.icon}></img>
