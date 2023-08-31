@@ -2,7 +2,7 @@ import Button from './Button';
 
 const Form = () => {
   return (
-    <form action="https://formspree.io/f/xknlojak" method="POST">
+    <form action="https://formspree.io/f/xbjvydjd" method="POST">
       <div className="grid grid-cols-1 gap-7 mb-7">
         <div className="grid md:grid-cols-3 gap-5 w-full">
           <input

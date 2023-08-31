@@ -1,12 +1,15 @@
 import { useState } from 'react';
-import logo from './assets/logoW.png';
+import Logo from './Component/Logo';
 
 const Navbar = () => {
   const [open, setIsOpen] = useState(false);
 
   return (
-    <div className=" md:flex md:p-6 p-3 max-w-screen-xl mx-auto justify-between items-center md:bg-transparent bg-violet-950 md:shadow-none shadow-2xl ">
-      <img className="p-2 w-[80px] md:w-[100px]" src={logo}></img>
+    <div
+      id="nav"
+      className=" md:flex md:p-6 p-3 max-w-screen-xl mx-auto justify-between items-center md:bg-transparent bg-violet-950 md:shadow-none shadow-2xl "
+    >
+      <Logo />
       <div
         onClick={() => setIsOpen(!open)}
         className="text-5xl text-white absolute top-8 right-4 md:hidden"
@@ -32,7 +35,7 @@ const Navbar = () => {
           className="transition-all duration-300 hover:text-rose-500"
           href="#work"
         >
-          Our work
+          Our works
         </a>
         <a
           className="transition-all duration-300 hover:text-rose-500"
